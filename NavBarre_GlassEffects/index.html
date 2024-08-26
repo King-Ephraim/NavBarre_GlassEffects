@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cookie&family=Rubik+Bubbles&family=Syne:wght@400..800&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="dot-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <h1>Whatsapp</h1>
+        <div class="line"></div>
+
+        <div class="profile">
+            <img src="profile.jpeg" alt="profile">
+            <div class="profile-text">
+                <h2>EPHRAIM</h2>
+                <p class="account">My Account</p>
+            </div>
+            
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white" class="toogle-box"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg></span>
+        </div>
+
+        <div class="line"></div>
+        <p class="menu">MENU</p>
+
+        <div class="elements">
+            <ul>
+                <li class="bar"><i class="fa-solid fa-house"></i><span>Home</span></li>
+                <li class="bar"><i class="fa-solid fa-pen-to-square"></i><span>Post</span></li>
+                <li class="bar"><i class="fa-solid fa-comments"></i><span>Messanger</span></li>
+                <li class="bar"><i class="fa-solid fa-user-group"></i><span>Friends</span></li>
+                <li class="bar"><i class="fa-solid fa-bell"></i><span>Notifications <i class="not-num">2</i></span></li>
+                <li class="bar"><i class="fa-solid fa-people-group"></i><span>Group</span></li>
+                <li class="bar"><i class="fa-solid fa-gear"></i><span>Settings</span></li>
+            </ul>
+        </div>
+
+        <div class="line" style="position: relative;top:45px;"></div>
+
+        <div class="logout-container">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <p class="logout-text">Log out</p>
+        </div>
+    </div>
+</body>
+<script>
+    let toogle = document.querySelector(".dot-container")
+    let container = document.querySelector(".container")
+
+    toogle.onclick = function (){
+        container.classList.toggle('active')
+    }
+</script>
+</html>
